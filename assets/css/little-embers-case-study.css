@@ -654,3 +654,138 @@ footer a:hover {
   background: #eaebe7;
   border: 1px solid #ccc;
 }
+
+/* Tablet */
+@media screen and (min-width: 601px) {
+  .wrap {
+    padding: 0 28px;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .meta-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .results {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hero {
+    padding: 70px 0 56px;
+  }
+  .hero-actions {
+    gap: 16px;
+  }
+
+  section {
+    padding: 56px 0;
+  }
+  .section-head h2 {
+    font-size: 27px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 901px) {
+  .topbar nav {
+    display: block;
+  }
+
+  .hero {
+    padding: 90px 0 70px;
+  }
+  .hero-actions {
+    gap: 16px;
+    margin-top: 34px;
+  }
+  .meta-row {
+    margin-top: 56px;
+    padding-top: 36px;
+  }
+
+  section {
+    padding: 64px 0;
+  }
+  .section-head {
+    gap: 18px;
+    margin-bottom: 32px;
+  }
+  .section-head h2 {
+    font-size: 30px;
+  }
+  .lead-text {
+    font-size: 17px;
+  }
+
+  .two-col {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+  }
+  .card {
+    padding: 26px 28px;
+  }
+  .card h4 {
+    font-size: 16px;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+
+  .swatch {
+    width: 84px;
+  }
+  .swatch .chip {
+    height: 60px;
+  }
+
+  .timeline {
+    padding-left: 26px;
+  }
+  .timeline .stage {
+    padding-bottom: 34px;
+  }
+  .timeline .stage::before {
+    left: -32px;
+  }
+  .timeline h4 {
+    font-size: 17px;
+  }
+
+  .obstacle {
+    grid-template-columns: 28px 1fr;
+    gap: 14px;
+    padding: 18px 0;
+  }
+  .obstacle h4 {
+    font-size: 15.5px;
+  }
+
+  .quote-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  blockquote {
+    padding: 22px 24px;
+    font-size: 15.5px;
+  }
+
+  .closing {
+    padding: 80px 0;
+  }
+  .closing h2 {
+    font-size: 32px;
+  }
+
+  footer .wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
