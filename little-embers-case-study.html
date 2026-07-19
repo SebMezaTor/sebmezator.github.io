@@ -7,6 +7,9 @@
         <meta name="keywords" content="case study, front-end developer, portfolio, HTML, CSS.">
         <meta name="description" content="Case study: designing and building Little Embers Café, a five page responsive coffee shop website, from research and wireframe through dev, testing, and refinement.">
         <title>Little Embers Café - Case Study | Sebastian Meza-Torres</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="little-embers-case-study.css">
     </head>
     <body>
@@ -48,7 +51,7 @@
                                         <div class="two-col">
                                             <div>
                                                 <p class="lead-text">Most café customers discover a shop on social media before they ever walk in - but the websites they land on work against that. Menus are buried in photo carousels instead of structured text, prices are hard to scan, and there's no fast way to answer "what do they have, and what does it cost?"</p>
-                                                <p class="lead-text-two">The brief: design a coffee shop website that treats the menu as the core product - organized, scannable, and easy to filter - while still feeling warm and handcrafted rather than transactional.</p>
+                                                <p class="lead-text mt-14">The brief: design a coffee shop website that treats the menu as the core product - organized, scannable, and easy to filter - while still feeling warm and handcrafted rather than transactional.</p>
                                                 </div>
                                                 <div class="card">
                                                     <h4>Why this concept</h4>
@@ -60,10 +63,10 @@
 
                                                     <section class="alt" id="design">
                                                         <div class="wrap">
-                                                            <div class="section-head"><span class="section-num">02</span><h2>Resarch &amp; Direction</h2></div>
+                                                            <div class="section-head"><span class="section-num">02</span><h2>Research &amp; Direction</h2></div>
                                                             <p class="lead-text">Research drew from real café sites (Tierra Mia Coffee), small business owner discussions on Reddit, and industry guidance on coffee shop web design - used to ground the fictional brand in real usability patterns rather than pure aesthetics.</p>
 
-                                                            <div class="grid-2">
+                                                            <div class="grid-2 mt-36">
                                                                 <div class="card">
                                                                     <h4>Concept A - "A Gentle Start" <span class="pill">Selected</span></h4>
                                                                     <p>Warm-espresso palette, calm morning-coffee imagery, Playfair Display headings with Lato body text. Chosen for its cozy, handcrafted feel.</p>
@@ -75,18 +78,18 @@
                                                                         </div>
                                                                         </div>
                                                                         <div class="card">
-                                                                            <h4>Concept B - "Community &amp; Connection</h4>
+                                                                            <h4>Concept B - "Community &amp; Connection"</h4>
                                                                             <p>Cooler navy palette with Nunito and Open Sans, leaning into shared-table social imagery. Ultimately felt too modern for the intimate tone the brand needed.</p>
                                                                             <div class="palette"></div>
                                                                             <div class="swatch"><div class="chip chip-navy"></div><span>Soft Navy</span></div>
-                                                                             <div class="swatch"><div class="chip chip-dusk"></div><span>Ceramic Dust</span></div>
+                                                                             <div class="swatch"><div class="chip chip-dusk"></div><span>Ceramic Dusk</span></div>
                                                                               <div class="swatch"><div class="chip chip-midnight"></div><span>Midnight Roast</span></div>
                                                                                <div class="swatch"><div class="chip chip-countertop"></div><span>Countertop White</span></div>
                                                                                </div>
                                                                                </div>
                                                                                </div>
 
-                                                                               <div class="grid-3">
+                                                                               <div class="grid-3 mt-40">
                                                                                 <figure>
                                                                                     <img src="https://sebmezator.github.io/little-embers-cafe/images/Little-Embers-Cafe-Hero.jpg" alt="Little Embers Café hero section">
                                                                                     <figcaption>Final hero - warm tones, soft lighting, calm coffee moment</figcaption>
@@ -107,7 +110,7 @@
                                                                                             <div class="wrap">
                                                                                                 <div class="section-head"><span class="section-num">03</span><h2>From Wireframe to Interface</h2></div>
                                                                                                 <p class="lead-text">Medium-fidelity wireframe layout and hierarchy for all four core pages before any visual styling began - including the menu page's category filter system (All / Hot Coffee / Cold Coffee / Non-Coffee / Pastries / Seasonal) that became the site's core interaction.</p>
-                                                                                                <div class="card LEC">
+                                                                                                <div class="card mt-24">
                                                                                                     <h4>One Change from Feedback</h4>
                                                                                                     <p>The original homepage wireframe showed prices on the featured drink cards. A peer review flagged that this made the homepage feel transactional rather than welcoming - prices were moved exclusively to the Menu page, and the homepage now sells the experience, not the price tag.</p>
                                                                                                     </div>
@@ -139,7 +142,10 @@
                                                                                                                         <div class="wrap">
                                                                                                                             <div class="section-head"><span class="section-num">05</span><h2>What broke, and how it got fixed</h2></div>
                                                                                                                             <p class="lead-text">Building solo across five pages at once surfaced bugs later than ideal - a lesson in incremental testing carried into later debugging.</p>
-                                                                                                                            <div class="obstacle-list">
+                                                                                                                            <div class="obstacle-list mt-24">
+                                                                                                                                <div class="obstacle">
+                                                                                                                                    <span class="mark">-</span>
+                                                                                                                                    <div><h4>Menu Page Cart</h4><p>Order total calculated correctly, but individual line items and confirmation messages weren't rendering. Resolved through targeted DOM-update debugging.</p></div>
                                                                                                                                 <div class="obstacle">
                                                                                                                                     <span class="mark">-</span>
                                                                                                                                     <div><h4>Gift Card Live Preview</h4><p>Color swatch and custom message inputs weren't updating the preview in real tim, and the success state after purchase wasn't displaying - required extensive event-binding debugging.</p></div>
@@ -160,7 +166,7 @@
                                                                                                                         <div class="wrap">
                                                                                                                             <div class="section-head"><span class="section-num">06</span><h2>Peer Testing &amp; Refinement</h2></div>
                                                                                                                             <p class="lead-text">With no real customer base to test against (the café is fictional), two classmates reviewed the live site as stand-ins for the target user during a peer review.</p>
-                                                                                                                            <div class="quote-grid">
+                                                                                                                            <div class="quote-grid mt-28">
                                                                                                                                 <blockquote>"The layout felt calm and welcoming, and the testimonials section in particular felt genuine and authentic." <cite>Peer Reviewer 1</cite></blockquote>
                                                                                                                                 <blockquote>"The color palette and typography were well suited to the café concept - the menu page's category transitions were a standout." <cite>Peer Reviewer 2</cite></blockquote>
                                                                                                                                 </div>
@@ -186,7 +192,7 @@
                                                                                                                                                             <p>Committing fully to one visual direction early ("A Gentle Start") gave every later decision -photography, type, layout a clear reference point to check against.</p>
                                                                                                                                                             </div>
                                                                                                                                                             <div class="card">
-                                                                                                                                                                <h4>As a Designer</h4>
+                                                                                                                                                                <h4>As a Developer</h4>
                                                                                                                                                                 <p>Shipping a multi-page site with zero frameworks sharpened real debugging instincts, and reinforced the value of testing one page fully before moving to the next.</p>
                                                                                                                                                                 </div>
                                                                                                                                                                 </div>
@@ -197,7 +203,7 @@
                                                                                                                                         <div class="wrap">
                                                                                                                                             <h2>Curious How It Holds Up Live?</h2>
                                                                                                                                             <p>The full site is deployed and browseable - menu filtering, gift card preview, and all.</p>
-                                                                                                                                            <a class="btn solid" href="https://sebmezator.github.io/little-embers-cafe/" target="_blank" rel="noopener">Visit Little Embers Café</a>
+                                                                                                                                            <a class="btn solid" href="https://sebmezator.github.io/little-embers-cafe/" target="_blank" rel="noopener">Visit Little Embers Café -></a>
                                                                                                                                             </div>
                                                                                                                                             </div>
                                                                                                                                             <footer>

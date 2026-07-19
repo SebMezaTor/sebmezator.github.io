@@ -3344,3 +3344,17 @@ body.is-touch .poptrox-popup .closer {
     padding-left: 0;
   }
 }
+
+/* Make Recent Work cards stack to one column earlier than xsmall */
+@media screen and (max-width: 736px) {
+  #two .row > .work-item {
+    width: 100% !important;
+  }
+}
+
+/* Center action buttons */
+ul.actions {
+  justify-content: center;
+}
+
+/* Look at this later and decide if you want the case study to be on the cards or as a nav*/
