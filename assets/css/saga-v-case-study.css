@@ -301,3 +301,87 @@ main {
   margin: 0 auto;
   padding: 7vh 6vw 5vh;
 }
+
+.hero .kicker {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 18px;
+
+}
+
+.hero .kicker::before{content: "⬩";}
+
+.hero h1 {
+    font-size: clamp(2rem, 8vw, 4.2rem);
+    font-weight: 600; line-height: 1.08; margin: 0 0 18px;
+}
+
+.hero h1 em {color: var(--rose); font-style: italic; }
+
+.hero p.lede {
+    max-width: 640px; font-size: 1.02rem; font-weight: 300;
+    color: rgba(243,236,221,0.82); margin: 0 0 28px;
+}
+
+.hero .links { display: flex; flex-direction:column; gap:12px; margin-bottom: 44px; }
+
+.btn {
+    display: inline-block; padding: 13px 22px; border-radius: 2px;
+    font-size: 0.78rem; letter-spacing: 0.08em;
+    text-transform: uppercase; text-align: center;
+    transition: all .2s ease;
+}
+
+.btn.primary {background: var(--gold); color: var(--void) font-weight: 500; }
+.btn.primary:hover{background: #e0b93a;}
+.btn.ghost{ border: 1px solid var(--line); }
+.btn.ghost:hover{ border-color: var(--gold); color:var(--gold);}
+
+.meta-row {
+    display: grid; grid-template-columns: 1fr 1fr;
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+
+.meta-row div { padding: 16px 12px 16px 0; }
+.meta-row div:nth-child(odd) { border-right: 1px solid var(--line); padding-right: 12px; }
+.meta-row span {
+    display: block; font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--lilac); margin-bottom: 6px;
+}
+.meta-row strong { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 600;}
+
+section.card {
+    max-width: var(--max); margin: 0 auto; padding: 6vh 6vw;
+    border-top: 1px solid var(--line);
+}
+
+.arcana {
+    display: flex; flex-direction: column; align-items: flex-start; gap: 16px; margin-bottom: 26px;
+}
+
+.arcana .plate {
+    flex: none;
+    width: 52px;
+    height: 80px;
+    border: 1px solid var(--gold-dim);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    position: relative;
+    background: linear-gradient(160deg, rgba(201,162,39,0.08), transparent 70%);
+}
+
+.arcana .plate::after{
+    content: "⬩"; position: absolute; bottom: 5px; font-size: 0.6rem; color:var(--gold-dim);
+}
+
+.arcana .titles .card-name {
+    font-size: 0.66rem; letter-spacing: 0.14rem; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 6px;
+}
+
+.arcana h2 {
+    font-size: clamp(1.4rem, 5vw, 2.3rem); font-weight: 600;
+}
