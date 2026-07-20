@@ -602,6 +602,8 @@ footer {
 footer .wrap {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 10px;
 }
 
@@ -785,7 +787,8 @@ footer a:hover {
 
   footer .wrap {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
   }
 }
