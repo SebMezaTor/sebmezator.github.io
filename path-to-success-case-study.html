@@ -198,9 +198,103 @@
               <th>Cost</th>
             </tr>
           </thead>
-          <tbody></tbody>
+          <tbody>
+            <tr>
+              <td>Single Session</td>
+              <td>$150</td>
+            </tr>
+            <tr>
+              <td>Monthly Package</td>
+              <td>$550</td>
+            </tr>
+            <tr>
+              <td>3-Month Package</td>
+              <td>$1,500</td>
+            </tr>
+          </tbody>
         </table>
+        <p>
+          The One-on-One Coaching pricing table, one of four with a different
+          row count to account for in the layout.
+        </p>
+      </section>
+
+      <section class="card" id="challenges">
+        <div class="step">
+          <div class="stone">4</div>
+          <div class="titles">
+            <div class="step-label">Fourth Step - Friction</div>
+            <h2>Challenges</h2>
+          </div>
+        </div>
+        <p>Three things gave me the most trouble on this build:</p>
+        <ul>
+          <li>
+            <strong>CSS grid for the service cards:</strong>getting nine cards
+            across four unevenly-sized categories to lay out consistently at
+            every breakpoint took real iteration, a grid that works cleanly at
+            one screen width can break at te next without careful column and gap
+            logic.
+          </li>
+          <li>
+            <strong>The four pricing tables:</strong>each table has a different
+            number for rows, and tables resist responsive treatment by nature.
+            Keeping all four legible and visually consistent from the smallest
+            breakpoint up through desktop, without any one of them looking out
+            of step with the others took more deliberate width and spacing
+            decisions than a single table would have.
+          </li>
+          <li>
+            <strong>The hamburger menu:</strong>toggling between a collapsed
+            icon on small screens and a full inline nav at wider breakpoints was
+            the hardest piece. Coordinating the toggle behavior with the CSS
+            breakpoints so it didn't break or flicker at the in-between screen
+            sizes.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card" id="reflect">
+        <div class="step">
+          <div class="stone">5</div>
+          <div class="titles">
+            <div class="step-label">Fifth Step - Outcome</div>
+            <h2>Outcome &amp; What It Taught Me</h2>
+          </div>
+        </div>
+        <div class="stat-grid">
+          <div class="stat">
+            <b>9</b><span>Services across 4 categories</span>
+          </div>
+          <div class="stat"><b>4</b><span>Pricing tables</span></div>
+          <div class="stat"><b>4</b><span>Mobile-first breakpoints</span></div>
+          <div class="stat">
+            <b>1</b><span>Collapsible nav, built from scratch</span>
+          </div>
+        </div>
+        <p>
+          This build pushed me further into layout mechanics I hadn't fully
+          settled into before: CSS grid, table responsiveness, and a hamburger
+          nav all landing int he same project. Getting a nine-card grid, four
+          differently-shaped pricing tables, and a collapsing menu to feel like
+          one coherent, mobile-first system rather than three separate problems
+          was the real work here.
+        </p>
+        <p>
+          The nav in particular changed how I think about responsive navigation
+          going forward. It is not just a design decision, it is a coordination
+          problem between markup, CSS breakpoints, and interaction state that
+          has to hold together cleanly at every screen size, not just the two or
+          three you test first.
+        </p>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Sebastian Meza-Torres •
+        <a href="mailto:smmtorres6@gmail.com">smmtorres6@gmail.com</a>
+      </p>
+    </footer>
   </body>
 </html>
