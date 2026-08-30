@@ -399,7 +399,7 @@ button:focus-visible {
 
 .hero-photo {
   background: var(--accent);
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   margin-inline: calc(var(--gutter) * -1);
   width: calc(100% + var(--gutter) * 2);
@@ -409,10 +409,10 @@ button:focus-visible {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center 20%;
   opacity: 0;
   transition: opacity 0.5s ease;
-  transform: scale(1.06);
+  transform: scale(1.03);
 }
 
 .hero-photo img.is-loaded {
@@ -490,3 +490,200 @@ button:focus-visible {
 }
 
 /* Sections*/
+.section {
+  padding-block: 3.5rem;
+}
+
+.section-alt {
+  background: var(--bone-raised);
+  border-top: 2px solid var(--ink);
+}
+
+.section-heading {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.section-index {
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.subsection-heading {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.25rem;
+}
+/* Project Section */
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.project-card {
+  position: relative;
+  background: var(--bone-raised);
+  border: 2px solid var(--ink);
+  border-radius: 0.3rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition:
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.project-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    280px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(var(--accent-rgb), 0.16),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 2;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-thumb {
+  aspect-ratio: 16 / 10;
+  border-bottom: 2px solid var(--ink);
+  background: var(--bone);
+  overflow: hidden;
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  opacity: 0;
+  transition:
+    transform 0.35s ease,
+    opacity 0.5s ease;
+}
+
+.project-thumb img.is-loaded {
+  opacity: 1;
+}
+
+.project-card:hover .project-thumb img {
+  transform: scale(1.06);
+}
+
+.project-thumb-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+}
+
+.project-thumb-fallback span {
+  font-family: var(--font-display);
+  color: var(--bone);
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.project-text {
+  padding: 1.75rem;
+}
+
+.project-tag {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  color: var(--brick);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.project-desc {
+  color: var(--ink-soft);
+  max-width: 60ch;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+}
+
+.project-meta li::after {
+  content: ".";
+  margin-left: 0.5rem;
+  color: var(--line);
+}
+
+.project-meta li:last-child::after {
+  content: "";
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.project-link {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.project-link-secondary {
+  color: var(--ink-soft);
+}
+
+.project-link-secondary:hover {
+  color: var(--accent);
+}
+
+/* Footer */
+.footer-inner {
+  padding-block: 1.75rem;
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.site-footer {
+  border-top: 2px solid var(--ink);
+}

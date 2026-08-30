@@ -13,7 +13,7 @@ requestAnimationFrame(() => {
 });
 
 document
-  .querySelectorAll('a[href$=".html], a[href*=".html#"]')
+  .querySelectorAll('a[href$=".html"], a[href*=".html#"]')
   .forEach((link) => {
     link.addEventListener("click", (e) => {
       const href = link.getAttribute("href");
@@ -65,3 +65,5 @@ document
       img.addEventListener("load", () => img.classList.add("is-loaded"));
     }
   });
+
+// Click to flip project cards
