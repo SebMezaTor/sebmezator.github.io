@@ -21,4 +21,52 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to Content</a>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a
+          class="logo"
+          href="index.html"
+          aria-label="Sebastian Meza-Torres, home"
+        >
+          <span class="logo-bracket">&lt;</span>SMT<span class="logo-bracket"
+            >/&gt;</span
+          >
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+        >
+          <span class="visually-hidden">Menu</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+          <ol>
+            <li>
+              <a href="about.html"><span class="nav-index">01</span>About</a>
+            </li>
+            <li>
+              <a href="index.html#work"
+                ><span class="nav-index">02</span>Work</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><span class="nav-index">03</span>Contact</a
+              >
+            </li>
+          </ol>
+          <a class="resume-link" href="Sebastian_Torres_Resume.pdf">Resume</a>
+        </nav>
+      </div>
+    </header>
+  </body>
 </html>
