@@ -76,6 +76,83 @@
         </nav>
       </div>
     </header>
+
+    <main id="main">
+      <section class="section contact-page">
+        <div class="wrap contact-page-grid">
+          <div class="contact-intro reveal">
+            <h1 class="section-heading"><span class="section-index">03</span>Get in Touch</h1>
+            <p class="contact-lede">I'm currently looking for full-time front-end roles. If you've got something in mind such as a job, a project, or just a question about my work, my inbox is open.</p>
+            <ul class="contact-links">
+              <li>
+                <a href="mailto:smmtorres6@gmail.com">smmtorres6@gmail.com</a>
+                <button type="button" class="copy-btn" data-copy="smmtorres6@gmail.com" aria-label="Copy email address">Copy</button>
+              </li>
+              <li><a href="tel:+16025009432">+1 (602) 500-9432</a></li>
+              <li><a href="https://github.com/SebMezaTor">GitHub</a></li>
+              <li><a href="www.linkedin.com/in/sebastian-meza-torres">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <form
+          class="contact-form reveal"
+          action="https://formsubmit.co/smmtorres6@gmail.com"
+          method="POST"
+          >
+
+          <input type="hidden" name="_subject" value="New message from your portfolio website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://sebmezator.github.io/contact.html?sent=true">
+
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" autocomplete="off">
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-note" id="sentNote" hidden>Thank you! Your message is on its way. I'll get back to you soon.</p>
+            </form>
+          </div>
+          </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>&copy; <span id="year"></span>Sebastian Meza-Torres</p>
+      </div>
+    </footer>
+
+    <button class="cmdk-trigger" id="cdmkTrigger" aria-label="Open command palette">
+      Search <kbd></kbd>
+    </button>
+
+    <div class="cmdk-overlay" id="cmdkOverlay" hidden>
+      <div class="cmdk-panel" role="dialog" aria-modal="true" aria-label="Command palette">
+        <input type="text" id="cmdkInput" class="cmdk-input" placeholder="Search pages, projects..." autocomplete="off">
+        <ul class="cmdk-list" id="cmdkList"></ul>
+      </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
     <script src="js/index.js"></script>
   </body>
 </html>
