@@ -1094,3 +1094,116 @@ body.is-transitioning {
 body.is-loaded {
   opacity: 1;
 }
+
+@media screen and (min-width: 768px) {
+  .hero-photo,
+  .about-photo {
+    margin-inline: 0;
+    width: 22rem;
+    aspect-ratio: 4 / 5;
+    float: right;
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-inner,
+  .about-hero-inner {
+    display: block;
+  }
+
+  .hero-copy {
+    padding-block: 4rem 4.5rem;
+  }
+
+  .about-copy {
+    padding-block: 3rem 3.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.75rem, 3.2vw, 2.35rem);
+  }
+
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-body-grid {
+    display: grid;
+    grid-template-columns: 1fr 16rem;
+    gap: 3rem;
+    clear: both;
+  }
+
+  .contact-links {
+    gap: 2rem;
+  }
+
+  .contact-page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .contact-intro .contact-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .primary-nav {
+    position: static;
+    inset: auto;
+    background: none;
+    padding: 0;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .primary-nav ol {
+    flex-direction: row;
+    gap: 1.75rem;
+    font-size: 0.85rem;
+  }
+
+  .resume-link {
+    margin-top: 0;
+  }
+
+  .hero-photo {
+    width: 26rem;
+  }
+
+  .about-photo {
+    width: 24rem;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-copy {
+    padding-block: 5.5rem 6rem;
+  }
+
+  .about-copy {
+    padding-block: 4rem 4.5rem;
+  }
+
+  .section {
+    padding-block: 5.5rem;
+  }
+
+  .hero-title {
+    max-width: 34ch;
+  }
+}
