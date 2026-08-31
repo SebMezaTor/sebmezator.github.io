@@ -199,3 +199,28 @@ if (spySections.length) {
   );
   spySections.forEach((section) => spyObserver.observe(section));
 }
+
+// Dark Mode
+const themeToggle = document.getElementById("themeToggle");
+const storedTheme = localStorage.getItem("theme");
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const initialTheme = storedTheme || (prefersDark ? "dark" : "light");
+
+if (initialTheme === "dark") {
+  document.documentElement.setAttribute("data-theme", "dark");
+}
+if (themeToggle) {
+  themeToggle.setAttribute("aria-pressed", String(initialTheme === "dark"));
+  themeToggle.addEventListener("click", () => {
+    const isDark =
+      document.documentElement.getAttribute("data-theme") === "dark";
+    const next = isDark ? "light" : "dark";
+    if (next === "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+    }
+    localStorage.setItem("theme", next);
+    themeToggle.setAttribute("aria-pressed", String(next === "dark"));
+  });
+}
